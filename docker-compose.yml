@@ -6,10 +6,12 @@ services:
     ports:
       - "80:80"
     environment:
-      WORDPRESS_DB_HOST: db-teste.c4jsgssi0pnf.us-east-1.rds.amazonaws.com
+      WORDPRESS_DB_HOST: db-wordpress.c4jsgssi0pnf.us-east-1.rds.amazonaws.com
       WORDPRESS_DB_USER: admin
       WORDPRESS_DB_PASSWORD: admin1234
-      WORDPRESS_DB_NAME: db-teste
+      WORDPRESS_DB_NAME: db-wordpress
+    volumes:
+      - /home/ec2-user/mnt/efs-wordpress:/var/www/html
     networks:
       - tunel
 networks:
