@@ -45,3 +45,16 @@ Projeto feito durante o estágio na CompassUol com o intuido de instalar e confi
 ## Passo 3: Criar o RDS.
 #### 3.1. Na barra de pesquisa do console da AWS pesquise "RDS" e clique na opção "Aurora and RDS".
 #### 3.2. Clique em "Criar banco de dados" e siga as seguintes configurações:
+![rds_pt1](https://github.com/user-attachments/assets/61c12fc6-fa14-43d3-8036-94abeda4d0e3)
+![rds_pt2](https://github.com/user-attachments/assets/2997f5e3-7899-49d6-b8cc-05d30696abfe)
+#### OBS:se necessário anote o usuario e a senha que você colocar pois precisará deles no docker-compose  daqui a pouco.
+![rds_pt3](https://github.com/user-attachments/assets/ae5daad8-6d87-43fb-82a5-33c76eb4eec5)
+![rds_pt4](https://github.com/user-attachments/assets/4873e3ab-5ee6-4d42-ac2e-7dacde1fb2e5)
+![rds_pt5](https://github.com/user-attachments/assets/fbf4586f-c68d-4506-9963-47685d2e71ea)
+![rds_pt6](https://github.com/user-attachments/assets/6ea56624-dc76-4cbb-a50c-0a2729513758)
+
+
+
+
+
+
