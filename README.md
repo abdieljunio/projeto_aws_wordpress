@@ -197,3 +197,36 @@ networks:
 #### Cole o dns no barra do link do navegador se estiver assim está correto:
 ![Screenshot from 2025-04-03 19-05-40](https://github.com/user-attachments/assets/142a58d5-9e38-490c-8ea7-f0d91148cb5a)
 
+## Passo 8: Monitoramento via CloudWatch.
+#### 8.1. Vá até  o Auto Scaling Group e clique no nome dele:
+![cw_pt1](https://github.com/user-attachments/assets/affb6f49-afe9-4d15-98bb-7826ab7bccc5)
+
+#### 8.2. Clique em "Escalabiidade Automatica" -> "Criar politica de escalabilidade dinamica".
+![cw_pt2](https://github.com/user-attachments/assets/f4083147-df58-4a32-a16b-afa6004941ca)
+
+#### 8.3. Configure e clique em "Criar".
+![cw_pt3](https://github.com/user-attachments/assets/288f4de0-12b8-45a8-9e21-a602dd7df2d7)
+
+#### 8.4. Digite CloudWatch na barra de pesquisa e selecione, clique em "Alarmes" -> "Em alrmes" -> "Criar alarme".
+![cw_pt4](https://github.com/user-attachments/assets/46c2841f-a4d2-4942-860a-415ac1911a1c)
+
+#### 8.5. Nesta tela clique em "AutoScaling":
+![cw_pt5](https://github.com/user-attachments/assets/c35660da-b65d-468a-ac04-98b7581a48c4)
+
+#### 8.6. Nesta tela clique em "Group Metrics":
+![cw_pt6](https://github.com/user-attachments/assets/49728c65-6223-49e7-8d29-7ab0628b7f45)
+
+### 8.7. Marque uma caixinha e clique em "Selecionar métrica":
+![cw_pt7](https://github.com/user-attachments/assets/3210e3c0-1a52-48a2-9ac6-d73db957edb0)
+### 8.8. Siga as seguintes configurações e vai clicando em próximo até acabar:
+![cw_pt8](https://github.com/user-attachments/assets/dbdedfe0-839e-47c8-ba01-4d55c3b80025)
+![cw_pt9](https://github.com/user-attachments/assets/f3988e89-74f2-4a6c-8915-6416744137d0)
+![cw_pt10](https://github.com/user-attachments/assets/48399737-2cc9-4239-810d-fc5726411ce4)
+## Passo 9: testando o CloudWatch.
+#### 9.1. Vá até as instâncias EC2 e coloque uma delas em estado de "Terminate"
+#### 9.2. Vá até o CloudWatch -> Alarmes -> Em alarmes, e verá a seguinte notificação:
+![cw_pt11](https://github.com/user-attachments/assets/3b674e8f-608c-4456-92be-294715aef94b)
+
+# 💡 Conclusão
+
+Essa foi a minha segunda atividade prática de Computação em Nuvem na AWS durante o estágio. Foi um desafio significativo, mas também extremamente recompensador. Pude aplicar e aprofundar meus conhecimentos em AWS, cloud computing, Linux, servidores e Docker, enfrentando cenários reais e aprendendo na prática. Cada etapa contribuiu para o meu crescimento técnico e me deixou ainda mais motivado a continuar evoluindo na área.
