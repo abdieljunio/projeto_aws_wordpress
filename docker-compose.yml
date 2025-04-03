@@ -10,6 +10,11 @@ services:
       WORDPRESS_DB_USER: admin
       WORDPRESS_DB_PASSWORD: admin1234
       WORDPRESS_DB_NAME: db-wordpress
+      WORDPRESS_CONFIG_EXTRA: |
+        define('DB_NAME', getenv('WORDPRESS_DB_NAME'));
+        define('DB_USER', getenv('WORDPRESS_DB_USER'));
+        define('DB_PASSWORD', getenv('WORDPRESS_DB_PASSWORD'));
+        define('DB_HOST', getenv('WORDPRESS_DB_HOST'));
     volumes:
       - /mnt/efs/wp-content:/var/www/html/wp-content
     networks:
@@ -17,5 +22,3 @@ services:
 networks:
   tunel:
     driver: bridge
-
-
