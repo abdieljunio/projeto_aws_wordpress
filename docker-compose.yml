@@ -9,10 +9,9 @@ services:
       WORDPRESS_DB_HOST: db-wordpress.c4jsgssi0pnf.us-east-1.rds.amazonaws.com
       WORDPRESS_DB_USER: admin
       WORDPRESS_DB_PASSWORD: admin1234
-      WORDPRESS_DB_NAME: db-wordpress
+      WORDPRESS_DB_NAME: dtabase_wordpress
     volumes:
       - /mnt/efs/wp-content:/var/www/html/wp-content
-      - ./wp-config.php:/var/www/html/wp-config.php  # Monta um wp-config.php fixo
     networks:
       - tunel
 networks:
